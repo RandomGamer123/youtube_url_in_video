@@ -13,7 +13,7 @@ code_challenge_method = "plain"
 oauth_payload = "scope={}&response_type={}&redirect_uri={}&client_id={}&code_challenge={}&code_challenge_method={}".format(urllib.parse.quote(scopes),response_type,urllib.parse.quote(redirect_uri),urllib.parse.quote(client_id),urllib.parse.quote(code_challenge),code_challenge_method)
 oauth_url = "{}?{}".format(oauth_endpoint, oauth_payload)
 print(oauth_url)
-oauth_code = input("Please input the code you have received.")
+oauth_code = input("Please input the code you have received.\n")
 
 token_exchange_endpoint = "https://oauth2.googleapis.com/token"
 client_secret = config[2]
@@ -27,5 +27,5 @@ token_payload = {
     'code_verifier': code_challenge
 }
 r = requests.post(token_exchange_endpoint, data=token_payload)
-f = open('token.json','w')
+f = open('token_backup.json','w')
 f.write(r.text)
