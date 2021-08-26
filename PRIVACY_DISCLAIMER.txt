@@ -1,0 +1,1 @@
+This application does not collect any user data. All data and tokens are only stored locally on your own computer. You may delete all data by deleting the oauth_config.txt and token.json files.

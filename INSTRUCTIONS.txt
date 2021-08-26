@@ -1,0 +1,5 @@
+When you use this application for the first time, please run oauth.py to generate your authorisation.
+You will need to only do this once unless the authorisation expires or you revoke the authorisation.
+Then, run oauth_refresh.py to retrieve your access token.
+Then, you can use upload.py to upload combined videos. 
+In the case upload.py prompts you to run oauth_refresh.py again, do that.
