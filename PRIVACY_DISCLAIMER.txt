@@ -1,1 +1,4 @@
+Privacy Disclaimer for YouTube Byte-wise Video Uploader Project
+
 This application does not collect any user data. All data and tokens are only stored locally on your own computer. You may delete all data by deleting the oauth_config.txt, token.json, and token_backup.json files.
+This application accesses your YouTube channel using the OAuth protocol. None of your login information is accessed. The information of the video you upload, the video you upload, and configuation data you provide to upload the video are accessed, however none of this information is stored.
